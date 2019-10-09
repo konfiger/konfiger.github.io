@@ -5,4 +5,5 @@
  - [ ] implements size() method in all the languages
  - [ ] implements clear() method in all the languages
  - [ ] implemets isEmpty() method in all the languages
+ - [ ] implemets keyValueObjects() method in all the languages
  - [ ] enable cacheing in the KeyValueDB
