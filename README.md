@@ -7,41 +7,62 @@ Contains list of implemented functions. </p>
 This project is the closest thing to Android [Shared Preference](https://developer.android.com/reference/android/content/SharedPreferences) in other languages and off the Android platform.
 
 ## Table of content
-- [Implemented Functions](#implemented-functions)
-   - [Public Fields](#public-fields)
-   - [Putting](#putting)
-   - [Getting](#getting)
-   - [Removing](#removing)
-   - [Listeners](#listeners)
-   - [Read and Write](#read-and-write)
-   - [Others](#others)
+- [Documentation Brief](#documentation-brief)
+   - [KonfigerObject](#konfigerobject)
+      - [Constructors](#constructors)
+      - [Getters](#getters)
+      - [Setters](#setters)
+   - [Konfiger](#konfiger)
+      - [Public Fields](#public-fields)
+   - [Konfiger](#konfiger)
+      - [Constructors](#constructors)
+      - [Public Fields](#public-fields)
+      - [Putting](#putting)
+      - [Getting](#getting)
+      - [Removing](#removing)
+      - [Listeners](#listeners)
+      - [Read and Write](#read-and-write)
+      - [Delimeter and Seperator](#delimeter-and-seperator)
+      - [Others](#others)
 - [TODOS](#todos)
 - [How it works](#how-it-works)
 - [Contributing](#contributing)
 - [Support](#support)
 - [License](#license)
 
-## Implemented Functions
+## Documentation Brief
+
+### Konfiger
 
 The Key must always be string, the Value can be any type but the String 
 value will be saved and when requested the value returned by default is the 
 String value else requested with a typed get e.g. `getBoolean` then the 
 value will be converted to a valid `boolean` in the language.  
 
-### Public Fields
+#### Constructors
+
+| Function        | Description         
+| --------------- | ------------- 
+| fromFile(String)           | Load the configer datas from a file, the first parameter is the file path, the default delimeter(`=`) and seperator(`\n`) will be used
+| fromFile(String, Char, Char)           | Load the configer datas from a file, the first parameter is the file path, the second param is the delimeter and the third param is the seperator
+| fromString(String)           | Load the configer datas from a file, the first parameter is the String(can be empty), the default delimeter(`=`) and seperator(`\n`) will be used
+| fromString(String, Char, Char)           | Load the configer datas from a file, the first parameter is the String(can be empty), the second param is the delimeter and the third param is the seperator
+| fromStream(KonfigerStream)           | Load the configer datas from a KonfigerStream object, this make data loading progressive as data is only loaded from the file when put or get until the Stream reached EOF
+
+
+#### Public Fields
 
 | Function        | Description         
 | --------------- | ------------- 
 | MAX_CAPACITY           | The number of datas the konfiger can take, Usually the MAX Value of `Int` in the implemented language
 
 
-### Putting
+#### Putting
 
 The `put` functions also update the value at the location if it already in the konfiger
 
 | Function        | Description         
 | --------------- | ------------- 
-| puts(String, Objects...)           | Put a Multiple Objects `Objects...` into the konfiger, each of the object string value is put
 | put(String, Object)           | Put any object into the konfiger the Object value string value will be saved
 | putString(String, String)           | Put a String into the konfiger
 | putBoolean(String, Boolean)           | Put a Boolean` into the konfiger
@@ -49,14 +70,14 @@ The `put` functions also update the value at the location if it already in the k
 | putInt(String, int)           | Put a Int into the konfiger
 | putFloat(String, Float)           | Put a Float into the konfiger
 
-### Getting
+#### Getting
 
 | Function        | Description         
 | --------------- | ------------- 
 | getAll()           | Get all the entries in the konfiger in a `Map<K, V>`
 
 
-### Removing
+#### Removing
 
 | Function        | Description         
 | --------------- | ------------- 
@@ -64,14 +85,14 @@ The `put` functions also update the value at the location if it already in the k
 | remove(String)           | Remove the `KonfigerObject` using the data Key 
 
 
-### Listeners
+#### Listeners
 
 | Function        | Description         
 | --------------- | ------------- 
 | registerListener(KonfigerListener)           | Register a new listener that get call when a change to the konfiger datas occur. 
 | unRegisterListener(KonfigerListener)           | Remove a previously added listener from the konfiger
 
-### Read and Write
+#### Read and Write
 
 | Function        | Description         
 | --------------- | ------------- 
@@ -80,7 +101,7 @@ The `put` functions also update the value at the location if it already in the k
 | reload()         | Reload changes from the konfiger IO path
 | save()         | Save the konfiger datas into it IO path if specified, if no IO path specifed the datas remain in memory, this does not clear the data
 
-### Delimeter and Seperator
+#### Delimeter and Seperator
 
 | Function        | Description         
 | --------------- | ------------- 
@@ -89,7 +110,7 @@ The `put` functions also update the value at the location if it already in the k
 | setSeperator(Char)           | Change seperator char that seperate the datas, note that the file is not updates, to change the file call the `save()` function
 | setDelimeter(Char)           | Change delimeter char that seperated the key from object, note that the file is not updates, to change the file call the `save()` function
 
-### Others
+#### Others
 
 | Function        | Description         
 | --------------- | ------------- 
@@ -100,7 +121,7 @@ The `put` functions also update the value at the location if it already in the k
 | contains(String)           | Check if the konfiger contains a key 
 | enableCache(Boolean)           | Enable or disable caching, caching speeds up data search but can take up space in memory (very small though)
 | errorTolerance(Boolean)           | Enable or disable the error tolerancy property of the konfiger
-| toString           | All the kofiger datas are parsed into valid string with regards to the delimeter and seprator
+| toString()           | All the kofiger datas are parsed into valid string with regards to the delimeter and seprator
 
 
 ## TODOS
