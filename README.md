@@ -1,12 +1,17 @@
 
 # <p style="text-align: center;" align="center">konfiger</p>
 
-<p style="text-align: center;" align="center">The parent repository for this organisation, Contains list of implemented functions. </p>
+<p style="text-align: center;" align="center">The parent repository for this organisation, 
+Contains list of implemented functions. </p>
+
+This project is the closest thing to Android [Shared Preference](https://developer.android.com/reference/android/content/SharedPreferences) in other languages and off the Android platform.
 
 ## Table of content
 - [Implemented Functions](#implemented-functions)
-   - [Saving](#saving)
-- [TODOD](#todos)
+   - [Putting](#putting)
+   - [Getting](#getting)
+   - [Listeners](#listeners)
+- [TODOS](#todos)
 - [How it works](#how-it-works)
 - [Contributing](#contributing)
 - [Support](#support)
@@ -14,20 +19,44 @@
 
 ## Implemented Functions
 
-The key `k` must always be string, the `v` can be any type but the String 
+The Key must always be string, the Value can be any type but the String 
 value will be saved and when requested the value returned by default is the 
 String value else requested with a typed get e.g. `getBoolean` then the 
 value will be converted to a valid `boolean` in the language.  
 
-### Saving
+### Putting
 
 | Function        | Usage         
 | --------------- | ------------- 
-| put(k, v)           | Put any object into the konfiger the value `v` string value will be saved, the key `k` must be string 
-| putString(k, v)           | Put a String `v` into the konfiger
+| puts(String, Objects...)           | Put a Multiple Objects `Objects...` into the konfiger, each of the object string value is put
+| put(String, Object)           | Put any object into the konfiger the Object value string value will be saved
+| putString(String, String)           | Put a String into the konfiger
+| putBoolean(String, Boolean)           | Put a Boolean` into the konfiger
+| putLong(String, Long)           | Put a Long into the konfiger
+| putDouble(String, Double)           | Put a Double into the konfiger
+| putInt(String, int)           | Put a Int into the konfiger
+| putFloat(String, Float)           | Put a Float into the konfiger
+
+### Getting
+
+| Function        | Description         
+| --------------- | ------------- 
+| getAll()           | Get all the entries in the konfiger in a `Map<K, V>`
 
 
-putString()
+### Listeners
+
+| Function        | Description         
+| --------------- | ------------- 
+| registerListener()           | Register a new listener that get call when a change to the konfiger datas occur. 
+| unRegisterListener()           | Remove a previously added listener from the konfiger
+
+### Others
+
+| Function        | Description         
+| --------------- | ------------- 
+| enableCache(Boolean)           | Enable of disable caching, caching speeds up data search but can take up space in memory (very small though)
+
 
 ## TODOS
 
@@ -46,7 +75,7 @@ putString()
 KonfigerObject class contains the key and value field and the fields setter and getter. The KonfigerObject is the main internal type used in the Konfiger class.
  
 In Konfiger the key value pair is stored in `Array[]` type, all search updating and removal is done on the `konfigerObjects` in the class. The string sent as first parameter if parsed into valid key value using the separator and delimiter fields. The `toString` method also parse the `keyValueObjects` content into a valid string with regards to the 
-separator and delimeter. 
+separator and delimeter. The value is properly escaped and unescaped.
 
 The `open` function reloads the file from disk to update the `Konfiger` if changes is written to the file in another program, if the file does not exist `FileNotSpecified` exception is thrown if `errTolerance` is set to false. The `save` function write the current `Konfiger` to the file, if the file does not exist is is created if it can. If no file is specified on init everything is written in memory and is disposed on app exit.
 
