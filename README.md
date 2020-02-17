@@ -55,18 +55,22 @@ value will be converted to a valid `boolean` in the language.
 
 | Function        | Description         
 | --------------- | ------------- 
+| size()           | Get the total size of datas in the konfiger
+| clear()           | clear all the datas in the konfiger. if the konfiger is attached to a file, the file is updated immediatly 
+| isEmpty()           | Check if the konfiger does not have an data
+| contains(String)           | Check if the konfiger contains a key 
 | enableCache(Boolean)           | Enable of disable caching, caching speeds up data search but can take up space in memory (very small though)
 
 
 ## TODOS
 
- - [ ] create website with reStructureText
+ - [x] create website for each implementation
  - [ ] write several example in the documentation 
  - [ ] examples to load and save locally in each languages
  - [x] implements size() method in all the languages
  - [x] implements clear() method in all the languages
  - [x] implemets isEmpty() method in all the languages
- - [ ] enable cacheing in the konfiger
+ - [x] enable cacheing in the konfiger
  - [ ] When commiting other language must include name in the LICENCE as `Copyright (c) {Year} {Name}:konfiger` confirm
  - [ ] When commiting other language author should include paypal or patreon link
 
