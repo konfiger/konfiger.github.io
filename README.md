@@ -8,9 +8,12 @@ This project is the closest thing to Android [Shared Preference](https://develop
 
 ## Table of content
 - [Implemented Functions](#implemented-functions)
+   - [Public Fields](#public-fields)
    - [Putting](#putting)
    - [Getting](#getting)
+   - [Removing](#removing)
    - [Listeners](#listeners)
+   - [Others](#others)
 - [TODOS](#todos)
 - [How it works](#how-it-works)
 - [Contributing](#contributing)
@@ -24,16 +27,24 @@ value will be saved and when requested the value returned by default is the
 String value else requested with a typed get e.g. `getBoolean` then the 
 value will be converted to a valid `boolean` in the language.  
 
+### Public Fields
+
+| Function        | Description         
+| --------------- | ------------- 
+| MAX_CAPACITY           | The number of datas the konfiger can take, Usually the MAX Value of `Int` in the implemented language
+
+
 ### Putting
 
-| Function        | Usage         
+The `put` functions also update the value at the location if it already in the konfiger
+
+| Function        | Description         
 | --------------- | ------------- 
 | puts(String, Objects...)           | Put a Multiple Objects `Objects...` into the konfiger, each of the object string value is put
 | put(String, Object)           | Put any object into the konfiger the Object value string value will be saved
 | putString(String, String)           | Put a String into the konfiger
 | putBoolean(String, Boolean)           | Put a Boolean` into the konfiger
 | putLong(String, Long)           | Put a Long into the konfiger
-| putDouble(String, Double)           | Put a Double into the konfiger
 | putInt(String, int)           | Put a Int into the konfiger
 | putFloat(String, Float)           | Put a Float into the konfiger
 
@@ -44,12 +55,20 @@ value will be converted to a valid `boolean` in the language.
 | getAll()           | Get all the entries in the konfiger in a `Map<K, V>`
 
 
+### Removing
+
+| Function        | Description         
+| --------------- | ------------- 
+| remove(int)           | Remove the `KonfigerObject` at a particular index
+| remove(String)           | Remove the `KonfigerObject` using the data Key 
+
+
 ### Listeners
 
 | Function        | Description         
 | --------------- | ------------- 
-| registerListener()           | Register a new listener that get call when a change to the konfiger datas occur. 
-| unRegisterListener()           | Remove a previously added listener from the konfiger
+| registerListener(KonfigerListener)           | Register a new listener that get call when a change to the konfiger datas occur. 
+| unRegisterListener(KonfigerListener)           | Remove a previously added listener from the konfiger
 
 ### Others
 
@@ -58,8 +77,10 @@ value will be converted to a valid `boolean` in the language.
 | size()           | Get the total size of datas in the konfiger
 | clear()           | clear all the datas in the konfiger. if the konfiger is attached to a file, the file is updated immediatly 
 | isEmpty()           | Check if the konfiger does not have an data
+| updateAt(Int, Object)           | Update the value at the specified index with the new Object String value, throws an error if OutOfRange sn errTolerance is false
 | contains(String)           | Check if the konfiger contains a key 
-| enableCache(Boolean)           | Enable of disable caching, caching speeds up data search but can take up space in memory (very small though)
+| enableCache(Boolean)           | Enable or disable caching, caching speeds up data search but can take up space in memory (very small though)
+| errorTolerance(Boolean)           | Enable or disable the error tolerancy property of the konfiger
 
 
 ## TODOS
