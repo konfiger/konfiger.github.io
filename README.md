@@ -75,6 +75,7 @@ This project is the closest thing to Android [Shared Preference](https://develop
 | --------------- | ------------- 
 | hasNext() | Check if the KonfigerStream has another KonfigerObject in it before reading 
 | next() | The current KonfigerObjeect in the stream
+| validateFileExistence(String) | Validate the specified parameter (filePath) exists on the FileSystem
 
 ### Konfiger
 
