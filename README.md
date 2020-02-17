@@ -175,7 +175,7 @@ The `put` functions also update the value at the location if it already in the k
 | --------------- | ------------- 
 | onValueAdded(Konfiger, String)           | the callback funtion is called when a new data is added to konfiger
 | onChange(Konfiger)           | the callback funtion is called when any change occur in the konfiger
-| onValueChange(Konfiger, String, String, String)           | the callback funtion is called when a data value changes, with the key, old value and new value
+| onValueChanged(Konfiger, String, String, String)           | the callback funtion is called when a data value changes, with the key, old value and new value
 | onValueRemove(Konfiger, String, String)           | the callback funtion is called with the Key and Value that was removed
 
 
