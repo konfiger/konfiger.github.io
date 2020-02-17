@@ -25,6 +25,8 @@ This project is the closest thing to Android [Shared Preference](https://develop
       - [Read and Write](#read-and-write)
       - [Delimeter and Seperator](#delimeter-and-seperator)
       - [Others](#others)
+   - [KonfigerListener](#konfigerListener)
+      - [Callbacks](#callbacks)
 - [TODOS](#todos)
 - [How it works](#how-it-works)
 - [Contributing](#contributing)
@@ -64,7 +66,15 @@ This project is the closest thing to Android [Shared Preference](https://develop
 
 | Function        | Description         
 | --------------- | ------------- 
-| KonfigerObject(String)           | Load the configer datas from a file, the 
+| KonfigerStream(String)           | Set the KonfigerStream file path, this cannot be changed, the default delimeter(`=`) and seperator(`\n`) will be used
+| KonfigerStream(String, Char, Char)   | Set the KonfigerStream file path, this cannot be changed, the second param is the delimeter and the third param is the seperator
+
+#### Methods
+
+| Function        | Description         
+| --------------- | ------------- 
+| hasNext() | Check if the KonfigerStream has another KonfigerObject in it before reading 
+| next() | The current KonfigerObjeect in the stream
 
 ### Konfiger
 
@@ -156,6 +166,17 @@ The `put` functions also update the value at the location if it already in the k
 | enableCache(Boolean)           | Enable or disable caching, caching speeds up data search but can take up space in memory (very small though)
 | errorTolerance(Boolean)           | Enable or disable the error tolerancy property of the konfiger
 | toString()           | All the kofiger datas are parsed into valid string with regards to the delimeter and seprator
+
+### KonfigerListener
+
+#### Callbacks
+
+| Function        | Description         
+| --------------- | ------------- 
+| onValueAdded(Konfiger, String)           | the callback funtion is called when a new data is added to konfiger
+| onChange(Konfiger)           | the callback funtion is called when any change occur in the konfiger
+| onValueChange(Konfiger, String, String, String)           | the callback funtion is called when a data value changes, with the key, old value and new value
+| onValueRemove(Konfiger, String, String)           | the callback funtion is called with the Key and Value that was removed
 
 
 ## TODOS
