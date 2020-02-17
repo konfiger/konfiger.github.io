@@ -13,6 +13,7 @@ This project is the closest thing to Android [Shared Preference](https://develop
    - [Getting](#getting)
    - [Removing](#removing)
    - [Listeners](#listeners)
+   - [Read and Write](#read-and-write)
    - [Others](#others)
 - [TODOS](#todos)
 - [How it works](#how-it-works)
@@ -70,6 +71,24 @@ The `put` functions also update the value at the location if it already in the k
 | registerListener(KonfigerListener)           | Register a new listener that get call when a change to the konfiger datas occur. 
 | unRegisterListener(KonfigerListener)           | Remove a previously added listener from the konfiger
 
+### Read and Write
+
+| Function        | Description         
+| --------------- | ------------- 
+| read(String)          | Dispose all the current data and read new datas from the file path, the konfiger IO path is changed to the file path sent as parameter
+| append(String)          | Read new datas from the file path and append the datas into the current konfiger, the konfiger IO path is not changes
+| reload()         | Reload changes from the konfiger IO path
+| save()         | Save the konfiger datas into it IO path if specified, if no IO path specifed the datas remain in memory, this does not clear the data
+
+### Delimeter and Seperator
+
+| Function        | Description         
+| --------------- | ------------- 
+| getSeperator()           | Get seperator char that seperate the datas
+| getDelimeter()           | Get delimeter char that seperated the key from object
+| setSeperator(Char)           | Change seperator char that seperate the datas, note that the file is not updates, to change the file call the `save()` function
+| setDelimeter(Char)           | Change delimeter char that seperated the key from object, note that the file is not updates, to change the file call the `save()` function
+
 ### Others
 
 | Function        | Description         
@@ -81,6 +100,7 @@ The `put` functions also update the value at the location if it already in the k
 | contains(String)           | Check if the konfiger contains a key 
 | enableCache(Boolean)           | Enable or disable caching, caching speeds up data search but can take up space in memory (very small though)
 | errorTolerance(Boolean)           | Enable or disable the error tolerancy property of the konfiger
+| toString           | All the kofiger datas are parsed into valid string with regards to the delimeter and seprator
 
 
 ## TODOS
@@ -102,7 +122,7 @@ KonfigerObject class contains the key and value field and the fields setter and 
 In Konfiger the key value pair is stored in `Array[]` type, all search updating and removal is done on the `konfigerObjects` in the class. The string sent as first parameter if parsed into valid key value using the separator and delimiter fields. The `toString` method also parse the `keyValueObjects` content into a valid string with regards to the 
 separator and delimeter. The value is properly escaped and unescaped.
 
-The `open` function reloads the file from disk to update the `Konfiger` if changes is written to the file in another program, if the file does not exist `FileNotSpecified` exception is thrown if `errTolerance` is set to false. The `save` function write the current `Konfiger` to the file, if the file does not exist is is created if it can. If no file is specified on init everything is written in memory and is disposed on app exit.
+The `reload` function reloads the file from disk to update the `Konfiger` if changes is written to the file in another program, if the file does not exist `FileNotSpecified` exception is thrown if `errTolerance` is set to false. The `save` function write the current `Konfiger` to the file, if the file does not exist is is created if it can. If no file is specified on init everything is written in memory and is disposed on app exit.
 
 ## Contributing
 
