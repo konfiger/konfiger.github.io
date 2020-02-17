@@ -9,13 +9,14 @@ This project is the closest thing to Android [Shared Preference](https://develop
 ## Table of content
 - [Documentation Brief](#documentation-brief)
    - [KonfigerObject](#konfigerobject)
-      - [Constructors](#constructors)
+      - [KonfigerObject Constructors](#konfigerobject-constructors)
       - [Getters](#getters)
       - [Setters](#setters)
+   - [KonfigerStream](#konfigerstream)
+      - [KonfigerStream Constructors](#konfigerstream-constructors)
+      - [Methods](#methods)
    - [Konfiger](#konfiger)
-      - [Public Fields](#public-fields)
-   - [Konfiger](#konfiger)
-      - [Constructors](#constructors)
+      - [Konfiger Constructors](#konfiger-constructors)
       - [Public Fields](#public-fields)
       - [Putting](#putting)
       - [Getting](#getting)
@@ -32,6 +33,39 @@ This project is the closest thing to Android [Shared Preference](https://develop
 
 ## Documentation Brief
 
+### KonfigerObject
+
+#### KonfigerObject Constructors
+
+| Function        | Description         
+| --------------- | ------------- 
+| KonfigerObject(String, String)           | Initialize a new KonfigerObject with it key and value, either parameter cannot be null
+
+#### Getters
+
+| Function        | Description         
+| --------------- | ------------- 
+| getKey()           | Get the key String of the KonfigerObject
+| getValue()           | Get the value String of the KonfigerObject
+| toString()           | Get string representation of the KonfigerObject in the format `"KonfigerObject@Key=${this.key},Value=${this.value}`
+
+#### Setters
+
+| Function        | Description         
+| --------------- | ------------- 
+| setKey(String)           | set the key String of the KonfigerObject
+| setValue(String)           | set the value String of the KonfigerObject
+
+
+
+### KonfigerStream
+
+#### KonfigerStream Constructors
+
+| Function        | Description         
+| --------------- | ------------- 
+| KonfigerObject(String)           | Load the configer datas from a file, the 
+
 ### Konfiger
 
 The Key must always be string, the Value can be any type but the String 
@@ -39,7 +73,7 @@ value will be saved and when requested the value returned by default is the
 String value else requested with a typed get e.g. `getBoolean` then the 
 value will be converted to a valid `boolean` in the language.  
 
-#### Constructors
+#### Konfiger Constructors
 
 | Function        | Description         
 | --------------- | ------------- 
@@ -47,7 +81,7 @@ value will be converted to a valid `boolean` in the language.
 | fromFile(String, Char, Char)           | Load the configer datas from a file, the first parameter is the file path, the second param is the delimeter and the third param is the seperator
 | fromString(String)           | Load the configer datas from a file, the first parameter is the String(can be empty), the default delimeter(`=`) and seperator(`\n`) will be used
 | fromString(String, Char, Char)           | Load the configer datas from a file, the first parameter is the String(can be empty), the second param is the delimeter and the third param is the seperator
-| fromStream(KonfigerStream)           | Load the configer datas from a KonfigerStream object, this make data loading progressive as data is only loaded from the file when put or get until the Stream reached EOF
+| fromStream(KonfigerStream)           | Load the configer datas from a KonfigerStream object, this make data loading progressive as data is only loaded from the file when put or get until the Stream reaches EOF
 
 
 #### Public Fields
@@ -159,7 +193,7 @@ You can support some of this community as they make big impact in the developeme
 
 ## License
 
-MIT License Copyright (c) 2019 Adewale Azeez - konfiger
+MIT License Copyright (c) 2020 Adewale Azeez - konfiger
 
 
 
