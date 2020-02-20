@@ -1,5 +1,4 @@
-
-# <p style="text-align: center;" align="center">konfiger</p>
+# <p style="text-align: center;" align="center"><img src="https://github.com/konfiger/konfiger.github.io/raw/master/icons/konfiger.png" alt="konfiger" style="width:180px;height:160px;" width="180" height="160" /><br /> konfiger</p>
 
 <p style="text-align: center;" align="center">The parent repository for this organisation, 
 Contains list of implemented functions. </p>
