@@ -66,7 +66,7 @@ value will be converted to a valid `boolean` in the language.
 
 | Function        | Description         
 | --------------- | ------------- 
-| MAX_CAPACITY           | The number of datas the konfiger can take, Usually the MAX Value of `Int` in the implemented language
+| MAX_CAPACITY           | The number of datas the konfiger can take, 10000000
 
 
 #### Putting
