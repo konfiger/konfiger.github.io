@@ -135,7 +135,6 @@ The `put` functions also update the value at the location if it already in the k
 | errorTolerance(Boolean)           | Enable or disable the error tolerancy property of the konfiger
 | toString()           | All the kofiger datas are parsed into valid string with regards to the delimeter and seprator
 | toJSON()           | All the kofiger datas are parsed into valid JSON string without regards to the delimeter and seprator
-| caseSensitive(Boolean)           | Change the key case sensitivity, it is effective from the point of changing
 
 ## TODOS
 
