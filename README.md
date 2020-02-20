@@ -119,7 +119,9 @@ The `put` functions also update the value at the location if it already in the k
 
 | Function        | Description         
 | --------------- | ------------- 
-| getAll()           | Get all the entries in the konfiger in a `Map<K, V>`
+| keys()           | Get all the keys entrie in the konfiger 
+| values()           | Get all the values entrie in the konfiger 
+| entries()           | Get all the entries in the konfiger in a `Map<K, V>`
 | get(String, Any)       | Get a value as string, if the key does not exist the seconds parameter will be returned
 | getString(String, String)   | Get a value as string, if the key does not exist the second parameter is returned
 | getBoolean(String, Boolean)   | Get a value as boolean, if the key does not exist the second parameter is returned
