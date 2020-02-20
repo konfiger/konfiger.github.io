@@ -8,10 +8,6 @@ This project is the closest thing to Android [Shared Preference](https://develop
 
 ## Table of content
 - [Documentation Brief](#documentation-brief)
-   - [KonfigerObject](#konfigerobject)
-      - [KonfigerObject Constructors](#konfigerobject-constructors)
-      - [Getters](#getters)
-      - [Setters](#setters)
    - [KonfigerStream](#konfigerstream)
       - [KonfigerStream Constructors](#konfigerstream-constructors)
       - [Methods](#methods)
@@ -21,12 +17,9 @@ This project is the closest thing to Android [Shared Preference](https://develop
       - [Putting](#putting)
       - [Getting](#getting)
       - [Removing](#removing)
-      - [Listeners](#listeners)
       - [Read and Write](#read-and-write)
       - [Delimeter and Seperator](#delimeter-and-seperator)
       - [Others](#others)
-   - [KonfigerListener](#konfigerListener)
-      - [Callbacks](#callbacks)
 - [TODOS](#todos)
 - [How it works](#how-it-works)
 - [Contributing](#contributing)
@@ -34,31 +27,6 @@ This project is the closest thing to Android [Shared Preference](https://develop
 - [License](#license)
 
 ## Documentation Brief
-
-### KonfigerObject
-
-#### KonfigerObject Constructors
-
-| Function        | Description         
-| --------------- | ------------- 
-| KonfigerObject(String, String)           | Initialize a new KonfigerObject with it key and value, either parameter cannot be null
-
-#### Getters
-
-| Function        | Description         
-| --------------- | ------------- 
-| getKey()           | Get the key String of the KonfigerObject
-| getValue()           | Get the value String of the KonfigerObject
-| toString()           | Get string representation of the KonfigerObject in the format `"KonfigerObject@Key=${this.key},Value=${this.value}`
-
-#### Setters
-
-| Function        | Description         
-| --------------- | ------------- 
-| setKey(String)           | set the key String of the KonfigerObject
-| setValue(String)           | set the value String of the KonfigerObject
-
-
 
 ### KonfigerStream
 
@@ -137,14 +105,6 @@ The `put` functions also update the value at the location if it already in the k
 | remove(int)           | Remove the entry at a particular index
 | remove(String)           | Remove the entry using the data Key 
 
-
-#### Listeners
-
-| Function        | Description         
-| --------------- | ------------- 
-| registerListener(KonfigerListener)           | Register a new listener that get call when a change to the konfiger datas occur. 
-| unRegisterListener(KonfigerListener)           | Remove a previously added listener from the konfiger
-
 #### Read and Write
 
 | Function        | Description         
@@ -177,18 +137,6 @@ The `put` functions also update the value at the location if it already in the k
 | toString()           | All the kofiger datas are parsed into valid string with regards to the delimeter and seprator
 | toJSON()           | All the kofiger datas are parsed into valid JSON string without regards to the delimeter and seprator
 | caseSensitive(Boolean)           | Change the key case sensitivity, it is effective from the point of changing
-
-### KonfigerListener
-
-#### Callbacks
-
-| Function        | Description         
-| --------------- | ------------- 
-| onValueAdded(Konfiger, String)           | the callback funtion is called when a new data is added to konfiger
-| onChange(Konfiger)           | the callback funtion is called when any change occur in the konfiger
-| onValueChanged(Konfiger, String, String, String)           | the callback funtion is called when a data value changes, with the key, old value and new value
-| onValueRemove(Konfiger, KonfigerObject)           | the callback funtion is called with the Key and Value that was removed
-
 
 ## TODOS
 
