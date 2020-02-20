@@ -134,7 +134,6 @@ The `put` functions also update the value at the location if it already in the k
 | enableCache(Boolean)           | Enable or disable caching, caching speeds up data search but can take up space in memory (very small though)
 | errorTolerance(Boolean)           | Enable or disable the error tolerancy property of the konfiger
 | toString()           | All the kofiger datas are parsed into valid string with regards to the delimeter and seprator
-| toJSON()           | All the kofiger datas are parsed into valid JSON string without regards to the delimeter and seprator
 
 ## TODOS
 
