@@ -88,11 +88,11 @@ value will be converted to a valid `boolean` in the language.
 
 | Function        | Description         
 | --------------- | ------------- 
-| fromFile(String)           | Load the configer datas from a file, the first parameter is the file path, the default delimeter(`=`) and seperator(`\n`) will be used
-| fromFile(String, Char, Char)           | Load the configer datas from a file, the first parameter is the file path, the second param is the delimeter and the third param is the seperator
-| fromString(String)           | Load the configer datas from a file, the first parameter is the String(can be empty), the default delimeter(`=`) and seperator(`\n`) will be used
-| fromString(String, Char, Char)           | Load the configer datas from a file, the first parameter is the String(can be empty), the second param is the delimeter and the third param is the seperator
-| fromStream(KonfigerStream)           | Load the configer datas from a KonfigerStream object, this make data loading progressive as data is only loaded from the file when put or get until the Stream reaches EOF
+| fromFile(String, Boolean)           | Load the configer datas from a file, the first parameter is the file path, the second boolean parameter indicates whether to read all the entry in the file in the constructor or when needed, the default delimeter(`=`) and seperator(`\n`) will be used
+| fromFile(String, Char, Char, Boolean)           | Load the configer datas from a file, the first parameter is the file path, the second param is the delimeter and the third param is the seperator, the fourth boolean parameter indicates whether to read all the entry in the file in the constructor or when needed
+| fromString(String, Boolean)           | Load the configer datas from a file, the first parameter is the String(can be empty), the second boolean parameter indicates whether to read all the entry in the file in the constructor or when needed, the default delimeter(`=`) and seperator(`\n`) will be used
+| fromString(String, Char, Char, Boolean)           | Load the configer datas from a file, the first parameter is the String(can be empty), the second param is the delimeter and the third param is the seperator, the forth boolean parameter indicates whether to read all the entry in the file in the constructor or when needed
+| fromStream(KonfigerStream, Boolean)           | Load the configer datas from a KonfigerStream object, the second boolean parameter indicates whether to read all the entry in the file in the constructor or when needed this make data loading progressive as data is only loaded from the file when put or get until the Stream reaches EOF
 
 
 #### Public Fields
