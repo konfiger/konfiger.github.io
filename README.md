@@ -108,8 +108,9 @@ The `put` functions also update the value at the location if it already in the k
 
 | Function        | Description         
 | --------------- | ------------- 
-| append(String)          | Read new datas from the file path and append 
-| save(?String)         | Save the konfiger datas into it IO path if specified, if no IO path specifed in the parameter the file path used in constructor is used, this does not clear the data
+| appendString(String)          | Append new data to the konfiger from a string, the new string delimeter and seperator must be the same with the current konfigure delimeter and seperator
+| appendFile(String)          | Read new datas from the file path and append, the new file delimeter and seperator must be the same with the current konfigure delimeter and seperator
+| save(String?)         | Save the konfiger datas into it IO path if specified, if no IO path specifed in the parameter the file path used in constructor is used, this does not clear the data
 
 #### Delimeter and Seperator
 
