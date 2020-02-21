@@ -108,8 +108,7 @@ The `put` functions also update the value at the location if it already in the k
 
 | Function        | Description         
 | --------------- | ------------- 
-| append(String)          | Read new datas from the file path and append the datas into the current konfiger, the konfiger IO path is not changes
-| reload()         | Reload changes from the konfiger IO path if it loaded from file or stream else nothing happens, the data is cleared
+| append(String)          | Read new datas from the file path and append 
 | save(?String)         | Save the konfiger datas into it IO path if specified, if no IO path specifed in the parameter the file path used in constructor is used, this does not clear the data
 
 #### Delimeter and Seperator
