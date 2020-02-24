@@ -137,8 +137,8 @@ The `put` functions also update the value at the location if it already in the k
 ## TODOS
 
  - [x] create website for each implementation
- - [ ] write several example in the documentation 
- - [ ] examples to load and save locally in each languages
+ - [x] write several example in the documentation 
+ - [x] examples to load and save locally in each languages
  - [x] implements size() method in all the languages
  - [x] implements clear() method in all the languages
  - [x] implemets isEmpty() method in all the languages
