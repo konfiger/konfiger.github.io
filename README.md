@@ -184,6 +184,7 @@ The `put` functions also update the value at the location if it already in the k
 | contains(String)           | Check if the konfiger contains a key 
 | enableCache(Boolean)           | Enable or disable caching, caching speeds up data search but can take up space in memory (very small though)
 | errorTolerance(Boolean)           | Enable or disable the error tolerancy property of the konfiger
+| isErrorTolerant() | Check if the konfiger object errTolerance is set to true
 | toString()           | All the kofiger datas are parsed into valid string with regards to the delimeter and seprator
 
 ## TODOS
