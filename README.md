@@ -143,8 +143,8 @@ The `put` functions also update the value at the location if it already in the k
  - [x] implements clear() method in all the languages
  - [x] implemets isEmpty() method in all the languages
  - [x] enable cacheing in the konfiger
- - [ ] When commiting other language must include name in the LICENCE as `Copyright (c) {Year} {Name}:konfiger` confirm
- - [ ] When commiting other language author should include paypal or patreon link
+ - [x] When commiting other language must include name in the LICENCE as `Copyright (c) {Year} {Name}:konfiger` confirm
+ - [x] When commiting other language author should include paypal or patreon link
 
 ## How it works
 
