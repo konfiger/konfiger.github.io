@@ -6,29 +6,40 @@ This project is the closest thing to Android [Shared Preference](https://develop
 
 ## The Implementation Languages
 
- - [NodeJS](https://konfiger.github.io/konfiger-nodejs)
-   - [npm](https://www.npmjs.com/package/konfiger)
-   - [source](https://github.com/konfiger/konfiger-nodejs)
- - [Java](https://konfiger.github.io/konfiger-java)
-   - [source](https://github.com/konfiger/konfiger-java)
- - [C](https://konfiger.github.io/konfiger-c)
-   - [source](https://github.com/konfiger/konfiger-c)
- - [C Sharp](https://konfiger.github.io/konfiger-csharp)
-   - [nuget](#)
-   - [source](https://github.com/konfiger/konfiger-csharp)
- - [Python](https://konfiger.github.io/konfiger-python)
-   - [pip](#)
-   - [source](https://github.com/konfiger/konfiger-python)
- - [C++](https://konfiger.github.io/konfiger-cpp)
-   - [source](https://github.com/konfiger/konfiger-cpp)
- - [Rust](https://konfiger.github.io/konfiger-rust)
-   - [source](https://github.com/konfiger/konfiger-rust)
- - [Dart](https://konfiger.github.io/konfiger-dart)
-   - [source](https://github.com/konfiger/konfiger-dart)
- - [Ring](https://konfiger.github.io/konfiger-ring)
-   - [source](https://github.com/konfiger/konfiger-ring)
- - [Powershell](https://konfiger.github.io/konfiger-powershell)
-   - [source](https://github.com/konfiger/konfiger-powershell)
+| Language        | Links         
+| --------------- | ------------- 
+| NodeJS           | [documentation](https://konfiger.github.io/konfiger-nodejs)
+|            | [npm](https://www.npmjs.com/package/konfiger)
+|            | [source](https://github.com/konfiger/konfiger-nodejs)
+| - | -
+| Java           | [documentation](https://konfiger.github.io/konfiger-java)
+|            | [source](https://github.com/konfiger/konfiger-java)
+| - | -
+| C           | [documentation](https://konfiger.github.io/konfiger-c)
+|            | [source](https://github.com/konfiger/konfiger-c)
+| - | -
+| Python           | [documentation](https://konfiger.github.io/konfiger-python)
+|            | [pip](#)
+|            | [source](https://github.com/konfiger/konfiger-python)
+| - | -
+| C Sharp           | [documentation](https://konfiger.github.io/konfiger-csharp)
+|            | [nuget](#)
+|            | [source](https://github.com/konfiger/konfiger-csharp)
+| - | -
+| Rust           | [documentation](https://konfiger.github.io/konfiger-rust)
+|            | [source](https://github.com/konfiger/konfiger-rust)
+| - | -
+| C++           | [documentation](https://konfiger.github.io/konfiger-cpp)
+|            | [source](https://github.com/konfiger/konfiger-cpp)
+| - | -
+| Dart           | [documentation](https://konfiger.github.io/konfiger-dart)
+|            | [source](https://github.com/konfiger/konfiger-dart)
+| - | -
+| Ring           | [documentation](https://konfiger.github.io/konfiger-ring)
+|            | [source](https://github.com/konfiger/konfiger-ring)
+| - | -
+| Powershell           | [documentation](https://konfiger.github.io/konfiger-powershell)
+|            | [source](https://github.com/konfiger/konfiger-powershell)
 
 ## Contributors
 
@@ -176,6 +187,7 @@ The `put` functions also update the value at the location if it already in the k
  - [x] enable cacheing in the konfiger
  - [x] When commiting other language must include name in the LICENCE as `Copyright (c) {Year} {Name}:konfiger` confirm
  - [x] When commiting other language author should include paypal or patreon link
+ - [ ] write a desktop app to manage a key value file using fltk and c++ implementation
 
 ## How it works
 
