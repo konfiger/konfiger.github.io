@@ -1,11 +1,42 @@
-# <p style="text-align: center;" align="center"><img src="https://github.com/konfiger/konfiger.github.io/raw/master/icons/konfiger.png" alt="konfiger" style="width:180px;height:160px;" width="180" height="160" /><br /> konfiger</p>
+# {::nomarkdown}<p style="text-align: center;" align="center"><img src="https://github.com/konfiger/konfiger.github.io/raw/master/icons/konfiger.png" alt="konfiger" style="width:180px;height:160px;" width="180" height="160" /><br /> konfiger</p>{:/}
 
-<p style="text-align: center;" align="center">The parent repository for this organisation, 
-Contains list of implemented functions. </p>
+<p style="text-align: center;" align="center">The parent repository for this organisation, Contains list of implementations and functions frame.</p>
 
 This project is the closest thing to Android [Shared Preference](https://developer.android.com/reference/android/content/SharedPreferences) in other languages and off the Android platform.
 
+## The Implementation Languages
+
+ - [NodeJS](https://konfiger.github.io/konfiger-nodejs)
+   - [npm](https://www.npmjs.com/package/konfiger)
+   - [source](https://github.com/konfiger/konfiger-nodejs)
+ - [Java](https://konfiger.github.io/konfiger-java)
+   - [source](https://github.com/konfiger/konfiger-java)
+ - [C](https://konfiger.github.io/konfiger-c)
+   - [source](https://github.com/konfiger/konfiger-c)
+ - [C Sharp](https://konfiger.github.io/konfiger-csharp)
+   - [nuget](#)
+   - [source](https://github.com/konfiger/konfiger-csharp)
+ - [Python](https://konfiger.github.io/konfiger-python)
+   - [pip](#)
+   - [source](https://github.com/konfiger/konfiger-python)
+ - [C++](https://konfiger.github.io/konfiger-cpp)
+   - [source](https://github.com/konfiger/konfiger-cpp)
+ - [Rust](https://konfiger.github.io/konfiger-rust)
+   - [source](https://github.com/konfiger/konfiger-rust)
+ - [Dart](https://konfiger.github.io/konfiger-dart)
+   - [source](https://github.com/konfiger/konfiger-dart)
+ - [Ring](https://konfiger.github.io/konfiger-ring)
+   - [source](https://github.com/konfiger/konfiger-ring)
+ - [Powershell](https://konfiger.github.io/konfiger-powershell)
+   - [source](https://github.com/konfiger/konfiger-powershell)
+
+## Contributors
+
+ - [Adewale Azeez](https://twitter.com/iamthecarisma)
+
 ## Table of content
+- [The Implementation Languages](#the-implementation-languages)
+- [Contributors](#contributors)
 - [Documentation Brief](#documentation-brief)
    - [KonfigerStream](#konfigerstream)
       - [KonfigerStream Constructors](#konfigerstream-constructors)
@@ -163,13 +194,11 @@ You can open issue or file a request that only address problems in this implemen
 
 ## Support
 
-You can support some of this community as they make big impact in the developement of people to get started with software engineering.
+You can support some of this community as they make big impact in the traing of individual to get started with software engineering and open source contribution.
 
-- https://www.patreon.com/devcareer
+- [https://www.patreon.com/devcareer](https://www.patreon.com/devcareer)
 
 ## License
 
 MIT License Copyright (c) 2020 Adewale Azeez - konfiger
-
-
 
