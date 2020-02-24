@@ -11,35 +11,45 @@ This project is the closest thing to Android [Shared Preference](https://develop
 | NodeJS           | [documentation](https://konfiger.github.io/konfiger-nodejs)
 |            | [npm](https://www.npmjs.com/package/konfiger)
 |            | [source](https://github.com/konfiger/konfiger-nodejs)
+|            | [examples](https://github.com/konfiger/konfiger.github.io/blob/master/usecases/use_cases.js.md)
 | - | -
 | Java           | [documentation](https://konfiger.github.io/konfiger-java)
 |            | [source](https://github.com/konfiger/konfiger-java)
+|            | [examples](https://github.com/konfiger/konfiger.github.io/blob/master/usecases/use_cases.java.md)
 | - | -
 | C           | [documentation](https://konfiger.github.io/konfiger-c)
 |            | [source](https://github.com/konfiger/konfiger-c)
+|            | [examples](https://github.com/konfiger/konfiger.github.io/blob/master/usecases/use_cases.c.md)
 | - | -
 | Python           | [documentation](https://konfiger.github.io/konfiger-python)
 |            | [pip](#)
 |            | [source](https://github.com/konfiger/konfiger-python)
+|            | [examples](https://github.com/konfiger/konfiger.github.io/blob/master/usecases/use_cases.python.md)
 | - | -
 | C Sharp           | [documentation](https://konfiger.github.io/konfiger-csharp)
 |            | [nuget](#)
 |            | [source](https://github.com/konfiger/konfiger-csharp)
+|            | [examples](https://github.com/konfiger/konfiger.github.io/blob/master/usecases/use_cases.csharp.md)
 | - | -
 | Rust           | [documentation](https://konfiger.github.io/konfiger-rust)
 |            | [source](https://github.com/konfiger/konfiger-rust)
+|            | [examples](https://github.com/konfiger/konfiger.github.io/blob/master/usecases/use_cases.rust.md)
 | - | -
 | C++           | [documentation](https://konfiger.github.io/konfiger-cpp)
 |            | [source](https://github.com/konfiger/konfiger-cpp)
+|            | [examples](https://github.com/konfiger/konfiger.github.io/blob/master/usecases/use_cases.cpp.md)
 | - | -
 | Dart           | [documentation](https://konfiger.github.io/konfiger-dart)
 |            | [source](https://github.com/konfiger/konfiger-dart)
+|            | [examples](https://github.com/konfiger/konfiger.github.io/blob/master/usecases/use_cases.dart.md)
 | - | -
 | Ring           | [documentation](https://konfiger.github.io/konfiger-ring)
 |            | [source](https://github.com/konfiger/konfiger-ring)
+|            | [examples](https://github.com/konfiger/konfiger.github.io/blob/master/usecases/use_cases.ring.md)
 | - | -
 | Powershell           | [documentation](https://konfiger.github.io/konfiger-powershell)
 |            | [source](https://github.com/konfiger/konfiger-powershell)
+|            | [examples](https://github.com/konfiger/konfiger.github.io/blob/master/usecases/use_cases.powershell.md)
 
 ## Contributors
 
