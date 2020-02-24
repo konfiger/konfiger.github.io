@@ -85,8 +85,8 @@ This project is the closest thing to Android [Shared Preference](https://develop
 
 | Function        | Description         
 | --------------- | ------------- 
-| KonfigerStream(String)           | Set the KonfigerStream file path, this cannot be changed, the default delimeter(`=`) and seperator(`\n`) will be used
-| KonfigerStream(String, Char, Char)   | Set the KonfigerStream file path, this cannot be changed, the second param is the delimeter and the third param is the seperator
+| fileStream(String, Char, Char, Boolean)   | Set the KonfigerStream file path, this cannot be changed, the last parameter is boolean if true the stream is error tolerant and does not throw any exception on invalid entry, only the first parameter is cumpulsory
+| stringStream(String, Char, Char, Boolean)   | Set the KonfigerStream string value, this cannot be changed, the second param is the delimeter and the third param is the seperator, the last parameter is boolean if true the stream is error tolerant and does not throw any exception on invalid entry, only the first parameter is cumpulsory
 
 #### Methods
 
