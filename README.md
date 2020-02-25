@@ -198,7 +198,7 @@ The `put` functions also update the value at the location if it already in the k
  - [x] enable cacheing in the konfiger
  - [x] When commiting other language must include name in the LICENCE as `Copyright (c) {Year} {Name}:konfiger` confirm
  - [x] When commiting other language author should include paypal or patreon link
- - [ ] write a desktop app to manage a key value file using fltk and c++ implementation
+ - [ ] write a desktop app to manage a key value file using fltk and c++ implementation with  command line support to test the key value feature in CLI
 
 ## How it works
 
@@ -223,5 +223,5 @@ You can support some of this community as they make big impact in the traing of 
 
 ## License
 
-MIT License Copyright (c) 2020 Adewale Azeez - konfiger
+MIT License Copyright (c) 2020 [Adewale Azeez](https://twitter.com/iamthecarisma) - konfiger
 
