@@ -155,8 +155,8 @@ The `put` functions also update the value at the location if it already in the k
 
 | Function        | Description         
 | --------------- | ------------- 
-| remove(int)           | Remove the entry at a particular index
-| remove(String)           | Remove the entry using the data Key 
+| remove(int)           | Remove the entry at a particular index. Returns the value of the entry that was removed.
+| remove(String)           | Remove the entry using the data Key. Returns the value of the entry that was removed.
 
 #### Read and Write
 
