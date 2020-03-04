@@ -148,6 +148,7 @@ The `put` functions also update the value at the location if it already in the k
 | getLong(String, Long)   | Get a value as long, if the key does not exist the second parameter is returned
 | getInt(String, Int)   | Get a value as int, if the key does not exist the second parameter is returned
 | getFloat(String, Float)   | Get a value as float, if the key does not exist the second parameter is returned
+| getDouble(String, Double)   | Get a value as double, if the key does not exist the second parameter is returned
 
 
 #### Removing
