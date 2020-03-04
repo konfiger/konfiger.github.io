@@ -133,6 +133,7 @@ The `put` functions also update the value at the location if it already in the k
 | putLong(String, Long)           | Put a Long into the konfiger
 | putInt(String, int)           | Put a Int into the konfiger
 | putFloat(String, Float)           | Put a Float into the konfiger
+| putDouble(String, Double)           | Put a Double into the konfiger
 
 #### Getting
 
