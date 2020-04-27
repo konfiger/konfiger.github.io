@@ -96,6 +96,10 @@ This project is the closest thing to Android [Shared Preference](https://develop
 
 | Function        | Description         
 | --------------- | ------------- 
+| isEscaping() | Check if the konfiger stream is configured to escape and unescape special characters
+| setEscaping(Boolean) | Change the stream to enable/disable escaping and unescape special characters
+| isTrimingKey() | Check if the stream is configured to trim key
+| setTrimingKey(Boolean) | Change the stream to enable/disable key trimming
 | hasNext() | Check if the KonfigerStream has another KonfigerObject in it before reading 
 | next() | The current KonfigerObjeect in the stream
 | validateFileExistence(String) | Validate the specified parameter (filePath) exists on the FileSystem
