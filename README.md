@@ -4,7 +4,7 @@
 
 This project is the closest thing to Android [Shared Preference](https://developer.android.com/reference/android/content/SharedPreferences) in other languages and off the Android platform.
 
-## The Implementation Languages
+## The Implementated Languages
 
 | Language        | Links         
 | --------------- | ------------- 
@@ -31,6 +31,10 @@ This project is the closest thing to Android [Shared Preference](https://develop
 |            | [source](https://github.com/konfiger/konfiger-csharp)
 |            | [examples](https://github.com/konfiger/konfiger.github.io/blob/master/usecases/use_cases.csharp.md)
 | - | -
+| BEAM languages. Elixir, Erlang, e.t.c           | [documentation](https://konfiger.github.io/konfiger-beam)
+|            | [source](https://github.com/konfiger/konfiger-beam)
+|            | [examples](https://github.com/konfiger/konfiger.github.io/blob/master/usecases/use_cases.beam.md)
+| - | -
 | Rust           | [documentation](https://konfiger.github.io/konfiger-rust)
 |            | [source](https://github.com/konfiger/konfiger-rust)
 |            | [examples](https://github.com/konfiger/konfiger.github.io/blob/master/usecases/use_cases.rust.md)
@@ -56,7 +60,7 @@ This project is the closest thing to Android [Shared Preference](https://develop
  - [Adewale Azeez](https://twitter.com/iamthecarisma)
 
 ## Table of content
-- [The Implementation Languages](#the-implementation-languages)
+- [The Implemented Languages](#the-implementated-languages)
 - [Contributors](#contributors)
 - [Documentation Brief](#documentation-brief)
    - [KonfigerStream](#konfigerstream)
