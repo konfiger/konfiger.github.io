@@ -96,12 +96,14 @@ This project is the closest thing to Android [Shared Preference](https://develop
 
 | Function        | Description         
 | --------------- | ------------- 
-| isEscaping() | Check if the konfiger stream is configured to escape and unescape special characters
-| setEscaping(Boolean) | Change the stream to enable/disable escaping and unescape special characters
-| isTrimingKey() | Check if the stream is configured to trim key
-| setTrimingKey(Boolean) | Change the stream to enable/disable key trimming
 | hasNext() | Check if the KonfigerStream has another KonfigerObject in it before reading 
 | next() | The current KonfigerObjeect in the stream
+| isEscaping() | Check if the konfiger stream is configured to escape and unescape special characters
+| setEscaping(Boolean) | Change the stream to enable/disable escaping and unescape special characters. This can be used to disable special character escaping if it causing error.
+| isTrimingKey() | Check if the stream is configured to trim key
+| setTrimingKey(Boolean) | Change the stream to enable/disable key trimming
+| getCommentPrefix() | Get the prefix string that indicate a pair entry if commented
+| setCommentPrefix(String) | Change the stream comment prefix, any entry starting with the comment prefix will be skipped. Comment in KonfigerStream is relative to the key value entry and not relative to a line.
 | validateFileExistence(String) | Validate the specified parameter (filePath) exists on the FileSystem
 
 ### Konfiger
@@ -147,12 +149,12 @@ The `put` functions also update the value at the location if it already in the k
 
 | Function        | Description         
 | --------------- | ------------- 
-| keys()           | Get all the keys entrie in the konfiger 
-| values()           | Get all the values entrie in the konfiger 
+| keys()           | Get all the keys entries in the konfiger 
+| values()           | Get all the values entries in the konfiger 
 | entries()           | Get all the entries in the konfiger in a `Map<K, V>`
 | get(String, Any)       | Get a value as string, if the key does not exist the seconds parameter will be returned
 | getString(String, String)   | Get a value as string, if the key does not exist the second parameter is returned
-| getBoolean(String, Boolean)   | Get a value as boolean, if the key does not exist the second parameter is returned
+| getBoolean(String, Boolean)   | Get a value as boolean, if the key does not exist the second parameter is returned, if the second parameter is null false if returned.
 | getLong(String, Long)   | Get a value as long, if the key does not exist the second parameter is returned
 | getInt(String, Int)   | Get a value as int, if the key does not exist the second parameter is returned
 | getFloat(String, Float)   | Get a value as float, if the key does not exist the second parameter is returned
@@ -182,7 +184,7 @@ The `put` functions also update the value at the location if it already in the k
 | --------------- | ------------- 
 | getSeperator()           | Get seperator char that seperate the datas
 | getDelimeter()           | Get delimeter char that seperated the key from object
-| setSeperator(Char)           | Change seperator char that seperate the datas, note that the file is not updates, to change the file call the `save()` function
+| setSeperator(Char)           | Change seperator char that seperate the datas, note that the file is not updates, to change the file call the `save()` function. If the new seperator is different from the old one all the entries values will be re parsed to get the new proper values, this process can take time if the entries is much. 
 | setDelimeter(Char)           | Change delimeter char that seperated the key from object, note that the file is not updates, to change the file call the `save()` function
 
 #### Others
@@ -211,6 +213,8 @@ The `put` functions also update the value at the location if it already in the k
  - [x] When commiting other language must include name in the LICENCE as `Copyright (c) {Year} {Name}:konfiger` confirm
  - [x] When commiting other language author should include paypal or patreon link
  - [ ] write a desktop app to manage a key value file using fltk and c++ implementation with  command line support to test the key value feature in CLI
+ - [ ] enable writing the file as it loaded with regard to commented entries
+ - [ ] enable writing the file as it loaded with regard to empty line
 
 ## How it works
 
