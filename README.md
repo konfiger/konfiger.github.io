@@ -6,50 +6,63 @@ This project is the closest thing to Android [Shared Preference](https://develop
 
 ## The Implementated Languages
 
+<a href="https://github.com/konfiger/konfiger-c"><img src="https://github.com/konfiger/konfiger.github.io/raw/master/icons/konfiger-c.png" width="100" height="100" /></a>
+<a href="https://github.com/konfiger/konfiger-c"><img src="https://github.com/konfiger/konfiger.github.io/raw/master/icons/konfiger-cpp.png" width="100" height="100" /></a>
+<a href="https://github.com/konfiger/konfiger-dotnet"><img src="https://github.com/konfiger/konfiger.github.io/raw/master/icons/konfiger-csharp.png" width="100" height="100" /></a>
+<a href="https://github.com/konfiger/konfiger-dart"><img src="https://github.com/konfiger/konfiger.github.io/raw/master/icons/konfiger-dart.png" width="100" height="100" /></a>
+<a href="https://github.com/konfiger/konfiger-beam"><img src="https://github.com/konfiger/konfiger.github.io/raw/master/icons/konfiger-elixr.png" width="100" height="100" /></a>
+<a href="https://github.com/konfiger/konfiger-beam"><img src="https://github.com/konfiger/konfiger.github.io/raw/master/icons/konfiger-erlang.png" width="100" height="100" /></a>
+<a href="https://github.com/konfiger/konfiger-go"><img src="https://github.com/konfiger/konfiger.github.io/raw/master/icons/konfiger-go.png" width="100" height="100" /></a>
+<a href="https://github.com/konfiger/konfiger-haskell"><img src="https://github.com/konfiger/konfiger.github.io/raw/master/icons/konfiger-haskell.png" width="100" height="100" /></a>
+<a href="https://github.com/konfiger/konfiger-java"><img src="https://github.com/konfiger/konfiger.github.io/raw/master/icons/konfiger-java.png" width="100" height="100" /></a>
+<a href="https://github.com/konfiger/konfiger-java"><img src="https://github.com/konfiger/konfiger.github.io/raw/master/icons/konfiger-kotlin.png" width="100" height="100" /></a>
+<a href="https://github.com/konfiger/konfiger-nodejs"><img src="https://github.com/konfiger/konfiger.github.io/raw/master/icons/konfiger-nodejs.png" width="100" height="100" /></a>
+<a href="https://github.com/konfiger/konfiger-powershell"><img src="https://github.com/konfiger/konfiger.github.io/raw/master/icons/konfiger-powershell.png" width="100" height="100" /></a>
+<a href="https://github.com/konfiger/konfiger-python"><img src="https://github.com/konfiger/konfiger.github.io/raw/master/icons/konfiger-python.png" width="100" height="100" /></a>
+<a href="https://github.com/konfiger/konfiger-ring"><img src="https://github.com/konfiger/konfiger.github.io/raw/master/icons/konfiger-ring.png" width="100" height="100" /></a>
+<a href="https://github.com/konfiger/konfiger-rust"><img src="https://github.com/konfiger/konfiger.github.io/raw/master/icons/konfiger-rust.png" width="100" height="100" /></a>
+<a href="https://github.com/konfiger/konfiger-java"><img src="https://github.com/konfiger/konfiger.github.io/raw/master/icons/konfiger-scala.png" width="100" height="100" /></a>
+<a href="https://github.com/konfiger/konfiger-dotnet"><img src="https://github.com/konfiger/konfiger.github.io/raw/master/icons/konfiger-visual-basic.png" width="100" height="100" /></a>
+
+---
+
 | Language        | Links         
 | --------------- | ------------- 
 | NodeJS           | [documentation](https://konfiger.github.io/konfiger-nodejs)
 |            | [npm](https://www.npmjs.com/package/konfiger)
 |            | [source](https://github.com/konfiger/konfiger-nodejs)
-|            | [examples](https://github.com/konfiger/konfiger.github.io/blob/master/usecases/use_cases.js.md)
 | - | -
 | JVM languages. Java, Kotlin, Scala e.t.c           | [documentation](https://konfiger.github.io/konfiger-java)
 |            | [source](https://github.com/konfiger/konfiger-java)
-|            | [examples](https://github.com/konfiger/konfiger.github.io/blob/master/usecases/use_cases.java.md)
 | - | -
 | C, C++           | [documentation](https://konfiger.github.io/konfiger-c)
 |            | [source](https://github.com/konfiger/konfiger-c)
-|            | [examples](https://github.com/konfiger/konfiger.github.io/blob/master/usecases/use_cases.c.md)
 | - | -
 | Python           | [documentation](https://konfiger.github.io/konfiger-python)
 |            | [pip](#)
 |            | [source](https://github.com/konfiger/konfiger-python)
-|            | [examples](https://github.com/konfiger/konfiger.github.io/blob/master/usecases/use_cases.python.md)
 | - | -
 | .NET, C#, Visual Basic           | [documentation](https://konfiger.github.io/konfiger-csharp)
 |            | [nuget](#)
 |            | [source](https://github.com/konfiger/konfiger-csharp)
-|            | [examples](https://github.com/konfiger/konfiger.github.io/blob/master/usecases/use_cases.csharp.md)
 | - | -
 | BEAM languages. Elixir, Erlang, e.t.c           | [documentation](https://konfiger.github.io/konfiger-beam)
 |            | [source](https://github.com/konfiger/konfiger-beam)
-|            | [examples](https://github.com/konfiger/konfiger.github.io/blob/master/usecases/use_cases.beam.md)
 | - | -
 | Rust           | [documentation](https://konfiger.github.io/konfiger-rust)
 |            | [source](https://github.com/konfiger/konfiger-rust)
-|            | [examples](https://github.com/konfiger/konfiger.github.io/blob/master/usecases/use_cases.rust.md)
 | - | -
 | Dart           | [documentation](https://konfiger.github.io/konfiger-dart)
 |            | [source](https://github.com/konfiger/konfiger-dart)
-|            | [examples](https://github.com/konfiger/konfiger.github.io/blob/master/usecases/use_cases.dart.md)
 | - | -
 | Ring           | [documentation](https://konfiger.github.io/konfiger-ring)
 |            | [source](https://github.com/konfiger/konfiger-ring)
-|            | [examples](https://github.com/konfiger/konfiger.github.io/blob/master/usecases/use_cases.ring.md)
 | - | -
 | Powershell           | [documentation](https://konfiger.github.io/konfiger-powershell)
 |            | [source](https://github.com/konfiger/konfiger-powershell)
-|            | [examples](https://github.com/konfiger/konfiger.github.io/blob/master/usecases/use_cases.powershell.md)
+| - | -
+| Haskell           | [documentation](https://konfiger.github.io/konfiger-haskell)
+|            | [source](https://github.com/konfiger/konfiger-haskell)
 
 ## Contributors
 
