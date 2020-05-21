@@ -1,1 +1,8 @@
 theme: jekyll-theme-cayman
+maintainer_url: https://github.com/Thecarisma
+maintainer_name: thecarisma
+header_links:
+ - text: View Repositories on Github
+   href: https://github.com/konfiger
+ - text: Support Devcareer
+   href: https://www.patreon.com/devcareer
