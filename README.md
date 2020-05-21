@@ -13,11 +13,11 @@ This project is the closest thing to Android [Shared Preference](https://develop
 |            | [source](https://github.com/konfiger/konfiger-nodejs)
 |            | [examples](https://github.com/konfiger/konfiger.github.io/blob/master/usecases/use_cases.js.md)
 | - | -
-| Java           | [documentation](https://konfiger.github.io/konfiger-java)
+| JVM languages. Java, Kotlin, Scala e.t.c           | [documentation](https://konfiger.github.io/konfiger-java)
 |            | [source](https://github.com/konfiger/konfiger-java)
 |            | [examples](https://github.com/konfiger/konfiger.github.io/blob/master/usecases/use_cases.java.md)
 | - | -
-| C           | [documentation](https://konfiger.github.io/konfiger-c)
+| C, C++           | [documentation](https://konfiger.github.io/konfiger-c)
 |            | [source](https://github.com/konfiger/konfiger-c)
 |            | [examples](https://github.com/konfiger/konfiger.github.io/blob/master/usecases/use_cases.c.md)
 | - | -
@@ -26,7 +26,7 @@ This project is the closest thing to Android [Shared Preference](https://develop
 |            | [source](https://github.com/konfiger/konfiger-python)
 |            | [examples](https://github.com/konfiger/konfiger.github.io/blob/master/usecases/use_cases.python.md)
 | - | -
-| C Sharp           | [documentation](https://konfiger.github.io/konfiger-csharp)
+| .NET, C#, Visual Basic           | [documentation](https://konfiger.github.io/konfiger-csharp)
 |            | [nuget](#)
 |            | [source](https://github.com/konfiger/konfiger-csharp)
 |            | [examples](https://github.com/konfiger/konfiger.github.io/blob/master/usecases/use_cases.csharp.md)
@@ -38,10 +38,6 @@ This project is the closest thing to Android [Shared Preference](https://develop
 | Rust           | [documentation](https://konfiger.github.io/konfiger-rust)
 |            | [source](https://github.com/konfiger/konfiger-rust)
 |            | [examples](https://github.com/konfiger/konfiger.github.io/blob/master/usecases/use_cases.rust.md)
-| - | -
-| C++           | [documentation](https://konfiger.github.io/konfiger-cpp)
-|            | [source](https://github.com/konfiger/konfiger-cpp)
-|            | [examples](https://github.com/konfiger/konfiger.github.io/blob/master/usecases/use_cases.cpp.md)
 | - | -
 | Dart           | [documentation](https://konfiger.github.io/konfiger-dart)
 |            | [source](https://github.com/konfiger/konfiger-dart)
