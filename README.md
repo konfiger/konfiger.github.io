@@ -98,8 +98,6 @@ This project is the closest thing to Android [Shared Preference](https://develop
 | --------------- | ------------- 
 | hasNext() | Check if the KonfigerStream has another KonfigerObject in it before reading 
 | next() | The current KonfigerObjeect in the stream
-| isEscaping() | Check if the konfiger stream is configured to escape and unescape special characters
-| setEscaping(Boolean) | Change the stream to enable/disable escaping and unescape special characters. This can be used to disable special character escaping if it causing error.
 | isTrimingKey() | Check if the stream is configured to trim key
 | setTrimingKey(Boolean) | Change the stream to enable/disable key trimming
 | getCommentPrefix() | Get the prefix string that indicate a pair entry if commented
