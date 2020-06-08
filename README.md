@@ -83,6 +83,7 @@ This project is the closest thing to Android [Shared Preference](https://develop
       - [Removing](#removing)
       - [Read and Write](#read-and-write)
       - [Delimeter and Seperator](#delimeter-and-seperator)
+      - [Native Object Attachment](#native-object-attachment)
       - [Others](#others)
 - [TODOS](#todos)
 - [How it works](#how-it-works)
@@ -107,10 +108,14 @@ This project is the closest thing to Android [Shared Preference](https://develop
 | --------------- | ------------- 
 | hasNext() | Check if the KonfigerStream has another KonfigerObject in it before reading 
 | next() | The current KonfigerObjeect in the stream
-| isTrimingKey() | Check if the stream is configured to trim key
+| isTrimingKey() | Check if the stream is configured to trim key, true by default
 | setTrimingKey(Boolean) | Change the stream to enable/disable key trimming
+| isTrimingValue() | Check if the stream is configured to trim the entry value, true by default
+| setTrimingValue(Boolean) | Change the stream to enable/disable entry value trimming
 | getCommentPrefix() | Get the prefix string that indicate a pair entry if commented
 | setCommentPrefix(String) | Change the stream comment prefix, any entry starting with the comment prefix will be skipped. Comment in KonfigerStream is relative to the key value entry and not relative to a line.
+| setContinuationChar(Char) | Set the character that indicates to the stream to continue reading for the entry value on the next line. The follwoing line leading spaces is trimmed. The default is `\`
+| getContinuationChar() | Get the continuation character used in the stream.
 | validateFileExistence(String) | Validate the specified parameter (filePath) exists on the FileSystem
 
 ### Konfiger
@@ -194,6 +199,13 @@ The `put` functions also update the value at the location if it already in the k
 | setSeperator(Char)           | Change seperator char that seperate the datas, note that the file is not updates, to change the file call the `save()` function. If the new seperator is different from the old one all the entries values will be re parsed to get the new proper values, this process can take time if the entries is much. 
 | setDelimeter(Char)           | Change delimeter char that seperated the key from object, note that the file is not updates, to change the file call the `save()` function
 
+# Native Object Attachment
+
+| Function        | Description         
+| --------------- | ------------- 
+| resolve(Object)           | Attach an object to konfiger, on attachment the values of the entries in the object will be set to the coresponding value in konfiger. The object can have the `matchGetKey` function which is called with a key in konfiger to get the value to map to the entry and the function `matchPutKey` to check which value to fetch from the object to put into konfiger.
+| dissolve(Object) | Attach an object to konfiger, on attachement each entry in the object will be put into konfiger. The object can have the `matchGetKey` function which is called with a key in konfiger to get the value to map to the entry and the function `matchPutKey` to check which value to fetch from the object to put into konfiger.
+
 #### Others
 
 | Function        | Description         
@@ -207,6 +219,7 @@ The `put` functions also update the value at the location if it already in the k
 | errorTolerance(Boolean)           | Enable or disable the error tolerancy property of the konfiger
 | isErrorTolerant() | Check if the konfiger object errTolerance is set to true
 | toString()           | All the kofiger datas are parsed into valid string with regards to the delimeter and seprator
+
 
 ## TODOS
 
