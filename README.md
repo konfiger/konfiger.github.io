@@ -14,7 +14,7 @@ This project is the closest thing to Android [Shared Preference](https://develop
 <a href="https://github.com/konfiger/konfiger-beam"><img src="https://github.com/konfiger/konfiger.github.io/raw/master/icons/konfiger-erlang.png" width="100" height="100" /></a>
 <a href="https://github.com/konfiger/konfiger-go"><img src="https://github.com/konfiger/konfiger.github.io/raw/master/icons/konfiger-go.png" width="100" height="100" /></a>
 <a href="https://github.com/konfiger/konfiger-haskell"><img src="https://github.com/konfiger/konfiger.github.io/raw/master/icons/konfiger-haskell.png" width="100" height="100" /></a>
-<a href="https://github.com/konfiger/konfiger-java"><img src="https://github.com/konfiger/konfiger.github.io/raw/master/icons/konfiger-java.png" width="100" height="100" /></a>
+<a href="https://github.com/konfiger/konfiger-jvm"><img src="https://github.com/konfiger/konfiger.github.io/raw/master/icons/konfiger-java.png" width="100" height="100" /></a>
 <a href="https://github.com/konfiger/konfiger-java"><img src="https://github.com/konfiger/konfiger.github.io/raw/master/icons/konfiger-kotlin.png" width="100" height="100" /></a>
 <a href="https://github.com/konfiger/konfiger-nodejs"><img src="https://github.com/konfiger/konfiger.github.io/raw/master/icons/konfiger-nodejs.png" width="100" height="100" /></a>
 <a href="https://github.com/konfiger/konfiger-powershell"><img src="https://github.com/konfiger/konfiger.github.io/raw/master/icons/konfiger-powershell.png" width="100" height="100" /></a>
@@ -204,7 +204,8 @@ The `put` functions also update the value at the location if it already in the k
 | Function        | Description         
 | --------------- | ------------- 
 | resolve(Object)           | Attach an object to konfiger, on attachment the values of the entries in the object will be set to the coresponding value in konfiger. The object can have the `matchGetKey` function which is called with a key in konfiger to get the value to map to the entry and the function `matchPutKey` to check which value to fetch from the object to put into konfiger.
-| dissolve(Object) | Attach an object to konfiger, on attachement each entry in the object will be put into konfiger. The object can have the `matchGetKey` function which is called with a key in konfiger to get the value to map to the entry and the function `matchPutKey` to check which value to fetch from the object to put into konfiger.
+| dissolve(Object) | Each string fields in the object will be put into konfiger. The object can have the `matchGetKey` function which is called with a key in konfiger to get the value to map to the entry. This does not attach the object.
+| detach() | Detach the object attached to konfiger when the resolve function is called. The object is returned.
 
 #### Others
 
