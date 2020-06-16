@@ -205,7 +205,7 @@ The `put` functions also update the value at the location if it already in the k
 | --------------- | ------------- 
 | resolve(Object)           | Attach an object to konfiger, on attachment the values of the entries in the object will be set to the coresponding value in konfiger. The object can have the `matchGetKey` function which is called with a key in konfiger to get the value to map to the entry and the function `matchPutKey` to check which value to fetch from the object to put into konfiger.
 | dissolve(Object) | Each string fields in the object will be put into konfiger. The object can have the `matchGetKey` function which is called with a key in konfiger to get the value to map to the entry. This does not attach the object.
-| detach() | Detach the object attached to konfiger when the resolve function is called. The object is returned.
+| detach() | Detach the object attached to konfiger when the resolve function is called. The detached object is returned.
 
 #### Others
 
