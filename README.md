@@ -125,7 +125,7 @@ This project is the closest thing to Android [Shared Preference](https://develop
 The Key must always be string, the Value can be any type but the String 
 value will be saved and when requested the value returned by default is the 
 String value else requested with a typed get e.g. `getBoolean` then the 
-value will be converted to a valid `boolean` in the language.  
+value will be converted to a valid `boolean` in the language. Keys are case sensitive by default such that `get("Key")` and `get("key")` will not give same value.
 
 #### Konfiger Constructors
 
@@ -220,6 +220,8 @@ The `put` functions also update the value at the location if it already in the k
 | contains(String)           | Check if the konfiger contains a key 
 | enableCache(Boolean)           | Enable or disable caching, caching speeds up data search but can take up space in memory (very small though)
 | toString()           | All the kofiger datas are parsed into valid string with regards to the delimeter and seprator
+| setCaseSensitivity(Boolean) | change the case sensitivity of the konfiger object, if true `get("Key")` and `get("key")` will return different value, if false same value will be returned.
+| isCaseSensitive() | Return true if the konfiger object is case sensitive and false if it not case sensitive
 
 
 ## TODOS
