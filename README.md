@@ -117,6 +117,8 @@ This project is the closest thing to Android [Shared Preference](https://develop
 | setContinuationChar(Char) | Set the character that indicates to the stream to continue reading for the entry value on the next line. The follwoing line leading spaces is trimmed. The default is `\`
 | getContinuationChar() | Get the continuation character used in the stream.
 | validateFileExistence(String) | Validate the specified parameter (filePath) exists on the FileSystem
+| errorTolerance(Boolean)           | Enable or disable the error tolerancy property of the konfiger
+| isErrorTolerant() | Check if the konfiger object errTolerance is set to true
 
 ### Konfiger
 
@@ -217,8 +219,6 @@ The `put` functions also update the value at the location if it already in the k
 | updateAt(Int, Object)           | Update the value at the specified index with the new Object String value, throws an error if OutOfRange sn errTolerance is false
 | contains(String)           | Check if the konfiger contains a key 
 | enableCache(Boolean)           | Enable or disable caching, caching speeds up data search but can take up space in memory (very small though)
-| errorTolerance(Boolean)           | Enable or disable the error tolerancy property of the konfiger
-| isErrorTolerant() | Check if the konfiger object errTolerance is set to true
 | toString()           | All the kofiger datas are parsed into valid string with regards to the delimeter and seprator
 
 
