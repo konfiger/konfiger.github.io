@@ -257,7 +257,7 @@ You can open issue or file a request that only address problems in this implemen
 
 ## Support
 
-You can support some of this community as they make big impact in the traing of individual to get started with software engineering and open source contribution.
+You can support some of this community as they make big impact in the training of individual to get started with software engineering and open source contribution.
 
 - [https://www.patreon.com/devcareer](https://www.patreon.com/devcareer)
 
