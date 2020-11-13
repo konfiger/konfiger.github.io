@@ -1,4 +1,4 @@
-# {::nomarkdown}<p style="text-align: center;" align="center"><img src="https://github.com/konfiger/konfiger.github.io/raw/master/icons/konfiger.png" alt="konfiger" style="width:180px;height:160px;" width="180" height="160" /><br /> konfiger</p>{:/}
+# {::nomarkdown}<p style="text-align: center;" align="center"><img src="https://github.com/konfiger/konfiger.github.io/raw/main/icons/konfiger.png" alt="konfiger" style="width:180px;height:160px;" width="180" height="160" /><br /> konfiger</p>{:/}
 
 <p style="text-align: center;" align="center">The parent repository for this organisation, Contains list of implementations and functions frame.</p>
 
@@ -6,23 +6,23 @@ This project is the closest thing to Android [Shared Preference](https://develop
 
 ## The Implementated Languages
 
-<a href="https://github.com/konfiger/konfiger-c"><img src="https://github.com/konfiger/konfiger.github.io/raw/master/icons/konfiger-c.png" width="100" height="100" /></a>
-<a href="https://github.com/konfiger/konfiger-c"><img src="https://github.com/konfiger/konfiger.github.io/raw/master/icons/konfiger-cpp.png" width="100" height="100" /></a>
-<a href="https://github.com/konfiger/konfiger-dotnet"><img src="https://github.com/konfiger/konfiger.github.io/raw/master/icons/konfiger-csharp.png" width="100" height="100" /></a>
-<a href="https://github.com/konfiger/konfiger-dart"><img src="https://github.com/konfiger/konfiger.github.io/raw/master/icons/konfiger-dart.png" width="100" height="100" /></a>
-<a href="https://github.com/konfiger/konfiger-beam"><img src="https://github.com/konfiger/konfiger.github.io/raw/master/icons/konfiger-elixr.png" width="100" height="100" /></a>
-<a href="https://github.com/konfiger/konfiger-beam"><img src="https://github.com/konfiger/konfiger.github.io/raw/master/icons/konfiger-erlang.png" width="100" height="100" /></a>
-<a href="https://github.com/konfiger/konfiger-go"><img src="https://github.com/konfiger/konfiger.github.io/raw/master/icons/konfiger-go.png" width="100" height="100" /></a>
-<a href="https://github.com/konfiger/konfiger-haskell"><img src="https://github.com/konfiger/konfiger.github.io/raw/master/icons/konfiger-haskell.png" width="100" height="100" /></a>
-<a href="https://github.com/konfiger/konfiger-jvm"><img src="https://github.com/konfiger/konfiger.github.io/raw/master/icons/konfiger-java.png" width="100" height="100" /></a>
-<a href="https://github.com/konfiger/konfiger-java"><img src="https://github.com/konfiger/konfiger.github.io/raw/master/icons/konfiger-kotlin.png" width="100" height="100" /></a>
-<a href="https://github.com/konfiger/konfiger-nodejs"><img src="https://github.com/konfiger/konfiger.github.io/raw/master/icons/konfiger-nodejs.png" width="100" height="100" /></a>
-<a href="https://github.com/konfiger/konfiger-powershell"><img src="https://github.com/konfiger/konfiger.github.io/raw/master/icons/konfiger-powershell.png" width="100" height="100" /></a>
-<a href="https://github.com/konfiger/konfiger-python"><img src="https://github.com/konfiger/konfiger.github.io/raw/master/icons/konfiger-python.png" width="100" height="100" /></a>
-<a href="https://github.com/konfiger/konfiger-ring"><img src="https://github.com/konfiger/konfiger.github.io/raw/master/icons/konfiger-ring.png" width="100" height="100" /></a>
-<a href="https://github.com/konfiger/konfiger-rust"><img src="https://github.com/konfiger/konfiger.github.io/raw/master/icons/konfiger-rust.png" width="100" height="100" /></a>
-<a href="https://github.com/konfiger/konfiger-java"><img src="https://github.com/konfiger/konfiger.github.io/raw/master/icons/konfiger-scala.png" width="100" height="100" /></a>
-<a href="https://github.com/konfiger/konfiger-dotnet"><img src="https://github.com/konfiger/konfiger.github.io/raw/master/icons/konfiger-visual-basic.png" width="100" height="100" /></a>
+<a href="https://github.com/konfiger/konfiger-c"><img src="https://github.com/konfiger/konfiger.github.io/raw/main/icons/konfiger-c.png" width="100" height="100" /></a>
+<a href="https://github.com/konfiger/konfiger-c"><img src="https://github.com/konfiger/konfiger.github.io/raw/main/icons/konfiger-cpp.png" width="100" height="100" /></a>
+<a href="https://github.com/konfiger/konfiger-dotnet"><img src="https://github.com/konfiger/konfiger.github.io/raw/main/icons/konfiger-csharp.png" width="100" height="100" /></a>
+<a href="https://github.com/konfiger/konfiger-dart"><img src="https://github.com/konfiger/konfiger.github.io/raw/main/icons/konfiger-dart.png" width="100" height="100" /></a>
+<a href="https://github.com/konfiger/konfiger-beam"><img src="https://github.com/konfiger/konfiger.github.io/raw/main/icons/konfiger-elixr.png" width="100" height="100" /></a>
+<a href="https://github.com/konfiger/konfiger-beam"><img src="https://github.com/konfiger/konfiger.github.io/raw/main/icons/konfiger-erlang.png" width="100" height="100" /></a>
+<a href="https://github.com/konfiger/konfiger-go"><img src="https://github.com/konfiger/konfiger.github.io/raw/main/icons/konfiger-go.png" width="100" height="100" /></a>
+<a href="https://github.com/konfiger/konfiger-haskell"><img src="https://github.com/konfiger/konfiger.github.io/raw/main/icons/konfiger-haskell.png" width="100" height="100" /></a>
+<a href="https://github.com/konfiger/konfiger-jvm"><img src="https://github.com/konfiger/konfiger.github.io/raw/main/icons/konfiger-java.png" width="100" height="100" /></a>
+<a href="https://github.com/konfiger/konfiger-java"><img src="https://github.com/konfiger/konfiger.github.io/raw/main/icons/konfiger-kotlin.png" width="100" height="100" /></a>
+<a href="https://github.com/konfiger/konfiger-nodejs"><img src="https://github.com/konfiger/konfiger.github.io/raw/main/icons/konfiger-nodejs.png" width="100" height="100" /></a>
+<a href="https://github.com/konfiger/konfiger-powershell"><img src="https://github.com/konfiger/konfiger.github.io/raw/main/icons/konfiger-powershell.png" width="100" height="100" /></a>
+<a href="https://github.com/konfiger/konfiger-python"><img src="https://github.com/konfiger/konfiger.github.io/raw/main/icons/konfiger-python.png" width="100" height="100" /></a>
+<a href="https://github.com/konfiger/konfiger-ring"><img src="https://github.com/konfiger/konfiger.github.io/raw/main/icons/konfiger-ring.png" width="100" height="100" /></a>
+<a href="https://github.com/konfiger/konfiger-rust"><img src="https://github.com/konfiger/konfiger.github.io/raw/main/icons/konfiger-rust.png" width="100" height="100" /></a>
+<a href="https://github.com/konfiger/konfiger-java"><img src="https://github.com/konfiger/konfiger.github.io/raw/main/icons/konfiger-scala.png" width="100" height="100" /></a>
+<a href="https://github.com/konfiger/konfiger-dotnet"><img src="https://github.com/konfiger/konfiger.github.io/raw/main/icons/konfiger-visual-basic.png" width="100" height="100" /></a>
 
 ---
 
